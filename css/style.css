@@ -1,0 +1,81 @@
+body{
+    background-image: url(../img/choco.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px auto 80px;
+    background-color: rgba(236, 240, 240, 0.863);
+    padding: 10px;
+    grid-template-areas: "header header header" "main main section" "footer footer footer";
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid gray;
+}
+
+.grid-container > div{
+    color: rgba(59, 1, 90, 0.404);
+    font-size: 15px;
+    padding: 20px;
+}
+.item1{
+    background-color: rgba(109, 2, 37, 0.534);
+    grid-area: header;
+}
+
+.item2{
+    background-color: rgba(2, 89, 95, 0.363);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 25%);
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    grid-template-areas: "header1 header1"
+    "article sidebar";
+}
+
+.item3{
+    background-color: rgba(2, 88, 21, 0.473);
+    grid-area: section;
+    text-align: center;
+}
+
+.item4{
+    background-color: rgba(1, 36, 104, 0.37);
+    grid-area: footer;
+}
+
+.item5{
+    background-color: rgba(213, 241, 233, 0.5);
+    grid-area: header1;
+}
+.item6{
+    background-color: rgba(214, 245, 219, 0.61);
+    grid-area: article;
+}
+.item7{
+    background-color: rgba(208, 247, 235, 0.493);
+    grid-area: sidebar;
+}
+
+.table{
+    display: grid;
+    table-layout: auto;
+    width: 95%;
+    background-color: rgba(236, 240, 240, 0.863);
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    
+}
