@@ -33,7 +33,7 @@ body{
     background-color: rgba(2, 89, 95, 0.363);
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 25%);
+    grid-template-columns: (1fr 25%);
     grid-template-rows: auto auto;
     grid-gap: 20px;
     grid-template-areas: "header1 header1"
@@ -73,9 +73,10 @@ body{
     padding: 10px;
     border: 2px solid gray;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .title{
     text-align: center;
-    
+
 }
