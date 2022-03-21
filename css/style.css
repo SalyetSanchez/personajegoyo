@@ -1,6 +1,7 @@
 body{
     background-image: url(../img/choco.jpg);
     font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
 }
 
 .grid-container{
@@ -11,12 +12,13 @@ body{
     grid-gap: 20px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 80px auto 80px;
-    background-color: rgba(236, 240, 240, 0.863);
+    background-color: rgba(153, 253, 253, 0.815);
     padding: 10px;
     grid-template-areas: "header header header" "main main section" "footer footer footer";
     text-align: center;
     font-size: 16px;
     border: 2px solid gray;
+    border-radius: 20px;
 }
 
 .grid-container > div{
@@ -27,6 +29,7 @@ body{
 .item1{
     background-color: rgba(109, 2, 37, 0.534);
     grid-area: header;
+    border-radius: 20px;
 }
 
 .item2{
@@ -38,43 +41,51 @@ body{
     grid-gap: 20px;
     grid-template-areas: "header1 header1"
     "article sidebar";
+    border-radius: 20px;
 }
 
 .item3{
     background-color: rgba(2, 88, 21, 0.473);
     grid-area: section;
     text-align: center;
+    border-radius: 20px;
 }
 
 .item4{
     background-color: rgba(1, 36, 104, 0.37);
     grid-area: footer;
+    border-radius: 20px;
 }
 
 .item5{
     background-color: rgba(213, 241, 233, 0.5);
     grid-area: header1;
+    border-radius: 20px;
 }
 .item6{
     background-color: rgba(214, 245, 219, 0.61);
     grid-area: article;
+    border-radius: 20px;
 }
 .item7{
     background-color: rgba(208, 247, 235, 0.493);
     grid-area: sidebar;
+    border-radius: 20px;
 }
 
 .table{
     display: grid;
     table-layout: auto;
     width: 95%;
-    background-color: rgba(236, 240, 240, 0.863);
+    background-color: rgba(1, 56, 56, 0.719);
     margin: 5px;
     padding: 10px;
     border: 2px solid gray;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
+    border-radius: 20px;
+    color: bisque;
 }
 
 .title{
@@ -84,22 +95,110 @@ body{
 
 
 .boton{
-    background: transparent;
-    text-align: center;
+    background-color: aquamarine;
     width: 150px;
     height: 15px;
-    font-size: 9px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 1px solid gray;
     border-radius: 3px;
+    text-align: center;
+    margin: 5px;
+
 }
 
 .boton:hover{
-    background-color: #008CBA;
-      color: white;
+    background-color: #07cca1;
+    color: white;
 }
 
-.a{
+a{
     text-decoration: none;
+    color: rgb(15, 15, 15);
+    align-content: center;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(1, 53, 46);
+}
+
+img{
+    border-radius: 50%;
+    border: 2px solid rgba(1, 66, 50, 0.575);
+}
+img.transicion{
+    height: 150px;
+    border: 2px solid rgba(1, 66, 50, 0.575);
+    border-radius: 50%;
+    display: grid;
+    grid-area: right;
+}
+
+
+img:hover{
+    border: 3px solid red;
+    transition: all;
+}
+
+p{
+    text-align: justify;
+    padding: 6px;
+}
+
+.forms{
+    background-color: rgba(2, 75, 69, 0.842);
+    border: 2px solid gray;
+    align-content: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 30px;
+    margin: 20px;
+    color: beige;
+    border-radius: 20px;
+}
+
+.head1{
+    background-color: rgba(174, 245, 239, 0.623);
+    padding: 20px;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "right left";
+    align-content: center;
+    border-radius: 20px;
+    
+}
+
+.imgtran{
+    display: grid;
+    grid-area: left;
+}
+
+.title{
+    display: grid;
+    grid-area: right;
+}
+ 
+input{
+    border-radius: 5px;
+    background-color: rgba(2, 65, 40, 0.644);
+    color: beige;
+}
+input:hover{
+    background-color: rgba(176, 250, 220, 0.644);
+    color: black;
+}
+
+textarea{
+    border-radius: 5px;
+    background-color: rgba(2, 65, 40, 0.644);
+    color: beige;
+}
+
+textarea:hover{
+    background-color: rgba(176, 250, 220, 0.644);
     color: black;
 }

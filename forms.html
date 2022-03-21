@@ -6,6 +6,68 @@
         <title>Formulario</title>
     </head>
     <body>
+        <div class="head1">
+          <div class="title">
+             <h1>¿Cuanto conoces de Gloria?</h1>
+             <div class="search">
+               <input type="search" id="buscar" name="buscar" placeholder=" Buscar"><input type="submit" value="Buscar">
+             </div>
+          </div>
+          <div class="imgtran">
+             <img class="transicion" src="img/goyo.jpeg">
+          </div>
+        </div>
+        </div>
+        <div class="forms">
+          <div class="nombre">
+            <label for="control">Introduce tu nombre:  </label>
+            <input type="text" id ="nombre" name="nombre" placeholder=" Nombre">
+          </div>
+          <div class="correo">
+            <label for="email">Digita tu correo elctrónico:  </label>
+            <input type="email" name="email" placeholder=" Correo">
+          </div>
+          <div class="phone">
+              <label for="phone">Digita tu número de celular:  </label>
+              <input type="tel" placeholder="Teléfono">
+          </div>
+          <br>
+          <div class="pregunta">
+            <label for="edad">¿Que edad tiene Gloria?:  </label>
+            <input type="radio" checked name="edad">40
+            <input type="radio" name="edad">36
+            <input type="radio" name="edad">39
+            <input type="radio" name="edad">29
+          </div>
+          <div class="preguntas">
+            <label for="ecivil">¿Que estado civil tiene Gloria?:  </label>
+            <input type="radio" checked name="ecivil">Soltera
+            <input type="radio" name="ecivil">Casada
+            <input type="radio" name="ecivil">Divorciada
+            <input type="radio" name="ecivil">Viuda
+          </div>
+          <div class="preguntas">
+            <label for="solista">¿Cuantas canciones ha hecho como solista?:  </label>
+            <input type="radio" checked name="solista">5
+            <input type="radio" name="solista">1
+            <input type="radio" name="solista">3
+            <input type="radio" name="solista">2
+          </div>
+          <div class="observacion">
+            <label for="observaciones">Observaciones:  </label>
+            <textarea rows="3" cols="20" name="observaciones"></textarea>
+          </div>
+          <br>
+          <div class="botones">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+          </div>
+        </div>
+        <div class="grid-item item4">
+            <div class="boton"><a href="home.html">Inicio</a></div>
+            <br><br>
+            <div class="boton"><a href="informacion.html">Trayectoria</a></div>
+        </div>
         
     </body>
 </html>
