@@ -8,11 +8,19 @@
         <title>Formulario</title>
     </head>
     <body>
+      <nav>
+        <div class="nav">
+          <div class="nav-bar"><a href="home.html">Inicio</a>
+          <a href="informacion.html">Trayectoria</a>
+          <a href="forms.html">¿Cuanto conoces de Gloria?</a></div>
+        </div>
+      </nav>
+      <main>
         <div class="head1">
           <div class="title">
              <h1>¿Cuanto conoces de Gloria?</h1>
              <div class="search">
-               <input type="search" id="buscar" name="buscar" placeholder=" Buscar"><input type="submit" value="Buscar">
+               <input type="search" id="buscar" name="buscar" placeholder=" Buscar"><br><br><input type="submit" value="Buscar">
              </div>
           </div>
           <div class="imgtran">
@@ -25,7 +33,7 @@
             <label for="control">Introduce tu nombre:  </label>
             <input type="text" id ="nombre" name="nombre" placeholder=" Nombre">
           </div>
-          <div class="correo">
+          <div class="email">
             <label for="email">Digita tu correo elctrónico:  </label>
             <input type="email" name="email" placeholder=" Correo">
           </div>
@@ -34,7 +42,7 @@
               <input type="tel" placeholder="Teléfono">
           </div>
           <br>
-          <div class="pregunta">
+          <div class="preguntas">
             <label for="edad">¿Que edad tiene Gloria?:  </label>
             <input type="radio" checked name="edad">40
             <input type="radio" name="edad">36
@@ -61,15 +69,10 @@
           </div>
           <br>
           <div class="botones">
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar"><br><br>
             <input type="reset" value="Restablecer">
           </div>
         </div>
-        <div class="grid-item item4">
-            <div class="boton"><a href="home.html">Inicio</a></div>
-            <br><br>
-            <div class="boton"><a href="informacion.html">Trayectoria</a></div>
-        </div>
-        
+      </main>        
     </body>
 </html>
